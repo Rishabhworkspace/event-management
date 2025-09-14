@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>College Cultural Festival 2024</title>
+    
+</head>
+
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>College Cultural Fest 2024</h1>
+        </div>
+        <nav>
+            <a href="#events">Events</a>
+            <a href="#merchandise">Merchandise</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h2>Celebrate Diversity at College Fest 2024!</h2>
+
+    </section>
+
+    
+    <section id="events" class="main">
+        <div class="events">
+            <h3>Cultural Festival Events</h3>
+
+            <div class="event">
+                <h4>Diwali Night</h4>
+                <p>Enjoy an evening of lights, traditional dance performances, and music to celebrate the Festival of
+                    Lights!</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="event">
+                <h4>Holi Bash</h4>
+                <p>Get ready for a color-filled celebration with vibrant music, dance, and color throwing!</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="event">
+                <h4>Onam Sadhya</h4>
+                <p>Join us for a grand Onam feast with traditional dishes, music, and dance performances.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="event">
+                <h4>Ganesh Chaturthi</h4>
+                <p>Show your energy at Auspicious event of Ganesh Chaturthi</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="event">
+                <h4>Navratri Garba Night</h4>
+                <p>Enjoy a night of Garba and Dandiya, with vibrant costumes and energetic dances celebrating Navratri.
+                </p>
+                <button>Learn More</button>
+            </div>
+            
+        </div>
+        <div id="merchandise" class="merchandise">
+            <h3>Festival Merchandise</h3>
+            <div class="merch-item">
+                <img src="images/technovit1.png" width="150" height="150" alt="TechnVit T-shirt">
+                <h4>TechnoVit T-Shirt</h4>
+                <p>$20.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="merch-item">
+                <img src="images/holi.png" width="150" height="150" alt="Holi Color Pack">
+                <h4>Holi Color Pack</h4>
+                <p>$10.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="merch-item">
+                <img src="images/onamsadhya.jfif.jpg" width="150" height="150" alt="Onam Sadhya Pack">
+                <h4>Onam Sadhya Pack</h4>
+                <p>$15.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="merch-item">
+                <img src="images/Screenshot 2024-09-16 223135.png" width="150" height="150" alt="Pongal Kit">
+                <h4>Pongal Kit</h4>
+                <p>$18.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="merch-item">
+                <img src="images/dandiya.png" width="150" height="150" alt="Navratri Dandiya Set">
+                <h4>Navratri Dandiya Set</h4>
+                <p>$12.00</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <form action="http://localhost:5000/api/register" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="event">Select Event:</label>
+        <select id="event" name="event" required>
+            <option value="Diwali Night">Diwali Night</option>
+            <option value="Holi Bash">Holi Bash</option>
+            <option value="Onam Sadhya">Onam Sadhya</option>
+            <option value="Navratri Garba Night">Navratri Garba Night</option>
+            <option value="Ganesh Chaturthi">Ganesh Chaturthi</option>
+        </select>
+        
+        <label for="ticket">Ticket Quantity:</label>
+        <input type="number" id="ticket" name="ticket" min="1" max="10" required>
+        
+        <button type="submit">Register</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 College Cultural Fest. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+
+</html>
